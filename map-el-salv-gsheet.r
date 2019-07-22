@@ -51,9 +51,13 @@ sfcases <- df_munis %>%
 # plot borders first then polygons with cases
 tmap_mode(mode = "plot")
 tmap::tm_shape(sfpolys) + tm_borders() +
-  tm_shape(sfcases) + tm_polygons("cases") 
+  tm_shape(sfcases) + tm_polygons("dengue") 
 
 # or create interactive plot (here via tmap, could use mapview too)
+# popupvars show when you click on hover
 tmap_mode(mode = "view")
-tmap::tm_shape(sfpolys) + tm_borders() +
-  tm_shape(sfcases) + tm_polygons("cases") 
+tm <- tmap::tm_shape(sfpolys) + tm_borders() +
+            tm_shape(sfcases) + tm_polygons("dengue", popup.vars = c("dengue","zika"))
+            
+
+print(tm)

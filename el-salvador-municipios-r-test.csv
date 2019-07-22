@@ -1,11 +1,11 @@
-Municipio,cases
-Acajutla,99
-Aguilares,1
-Ahuachapán,2
-Antiguo Cuscatlán,7
-Apastepeque,1
-Apopa,99
-Armenia,3
-Atiquizaya,1
-Ayutuxtepeque,7
-Caluco,8
+Municipio,dengue,zika
+Acajutla,11,0
+Aguilares,1,0
+Ahuachapán,2,0
+Antiguo Cuscatlán,7,0
+Apastepeque,1,0
+Apopa,10,2
+Armenia,3,0
+Atiquizaya,1,1
+Ayutuxtepeque,7,0
+Caluco,8,3
